@@ -14,27 +14,27 @@
 	    <div class="slider fullscreen">
 		    <ul class="slides">
 		        <li>
-			      <img src="http://lorempixel.com/1920/1920/nature/1/"><!-- random image -->
-			      <div class="caption pull-center">
+			      <img src="img/slide1.jpg">
+			      <div class="caption pull-center-text">
 			        <h3>This is our big Tagline!</h3>
 			        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
 			      </div>
 			    </li>
 			    <li>
-			      <img src="http://lorempixel.com/1920/1920/nature/2/"><!-- random image -->
-			      <div class="caption pull-left">
+			      <img src="img/slide2.jpg">
+			      <div class="caption pull-left-text">
 			        <h3>Left Aligned Caption</h3>
 			        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
 			      </div>
 			    </li>
 			    <li>
-			      <img src="http://lorempixel.com/1920/1920/nature/3/"><!-- random image -->
-			      <div class="caption pull-right">
+			      <img src="img/slide3.jpg">
+			      <div class="caption pull-right-text">
 			        <h3>Right Aligned Caption</h3>
 			        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
 			      </div>
 			    </li>
-			    </ul>
+			</ul>
 		</div>
         <div class="container">
 	        <div class="row">
@@ -44,30 +44,30 @@
 					
 	
 					
-					<div class="slider fullscreen in">
+					<div class="slider">
 					    <ul class="slides">
-					      <li>
-						      <img src="http://lorempixel.com/1920/1920/nature/1/"> <!-- random image -->
-						      <div class="caption pull-center">
+					        <li>
+						      <img src="img/slide1.jpg">
+						      <div class="caption pull-center-text">
 						        <h3>This is our big Tagline!</h3>
 						        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
 						      </div>
 						    </li>
 						    <li>
-						      <img src="http://lorempixel.com/1920/1920/nature/2/"><!-- random image -->
-						      <div class="caption pull-left">
+						      <img src="img/slide2.jpg">
+						      <div class="caption pull-left-text">
 						        <h3>Left Aligned Caption</h3>
 						        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
 						      </div>
 						    </li>
 						    <li>
-						      <img src="http://lorempixel.com/1920/1920/nature/3/"><!-- random image -->
-						      <div class="caption pull-right">
+						      <img src="img/slide3.jpg">
+						      <div class="caption pull-right-text">
 						        <h3>Right Aligned Caption</h3>
 						        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
 						      </div>
 						    </li>
-					    </ul>
+						</ul>
 					</div>
 					
 					
@@ -84,7 +84,11 @@
         <script src="js/bootstrap.js"></script>
         <script type="text/javascript">
 	        $(document).ready(function(){
-		    		$('.slider').slider({full_width: true});
+		    		$('.slider').slider({
+			    		full_width: true,
+			    		controls: true
+			    	});
+		    		
 		    });
         </script>
     </body>

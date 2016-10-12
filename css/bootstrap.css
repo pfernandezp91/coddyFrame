@@ -5574,7 +5574,7 @@ button.close {
 .slider.fullscreen ul.slides {
   height: 100%;
 }
-
+.slider.fullscreen ul.controls,
 .slider.fullscreen ul.indicators {
   z-index: 2;
   bottom: 30px;
@@ -5622,6 +5622,7 @@ button.close {
   z-index: 2;
 }
 
+.slider .controls,
 .slider .indicators {
   position: absolute;
   text-align: center;
@@ -5632,16 +5633,42 @@ button.close {
   padding: 0;
 }
 
+.slider.fullscreen ul.controls {
+	top: 0;
+	bottom: 0;
+}
+
 .slider .indicators .indicator-item {
   display: inline-block;
   position: relative;
-  cursor: pointer;
   height: 16px;
   width: 16px;
-  margin: 0 12px;
   background-color: #e0e0e0;
   transition: background-color .3s;
   border-radius: 50%;
+}
+.slider .indicators .indicator-item,
+.slider .controls #next_slide,
+.slider .controls #prev_slide {
+  cursor: pointer;
+  margin: 0 12px;
+}
+.slider .controls #next_slide,
+.slider .controls #prev_slide {
+	position: absolute;
+	top: 50%;
+	transform: translate( 0, -50% );
+	list-style: none;
+	z-index: 3;
+}
+.slider.fullscreen ul.indicators {
+	z-index: 5;
+}
+.slider .controls #next_slide {
+	right: 0;
+}
+.slider .controls #prev_slide {
+	left: 0;
 }
 
 .slider .indicators .indicator-item.active {
