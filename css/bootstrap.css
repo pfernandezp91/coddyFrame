@@ -13,8 +13,6 @@ html {
 body {
   margin: 0;
   height: 100%;
-  display: inline-block;
-  width: 100%;
 }
 
 article,
