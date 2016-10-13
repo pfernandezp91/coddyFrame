@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+	<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>CoDDyFrame</title>
+        <meta name="description" content="Este es un trabajo realizado por el equipo CoDDy con intención de agilizar el desarrollo de aplicaciones web.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="css/coddyframe.css" rel="stylesheet">
+        
+    </head>
+    <body>
+	    <div class="slider fullscreen">
+		    <ul class="slides">
+		        <li>
+			      <img src="img/slide1.jpg">
+			      <div class="caption pull-center-text">
+			        <h3>This is our big Tagline!</h3>
+			        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+			      </div>
+			    </li>
+			    <li>
+			      <img src="img/slide2.jpg">
+			      <div class="caption pull-left-text">
+			        <h3>Left Aligned Caption</h3>
+			        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+			      </div>
+			    </li>
+			    <li>
+			      <img src="img/slide3.jpg">
+			      <div class="caption pull-right-text">
+			        <h3>Right Aligned Caption</h3>
+			        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+			      </div>
+			    </li>
+			</ul>
+		</div>
+		
+
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="js/coddyframe.js"></script>
+        <script src="js/slider.js"></script>
+        <script type="text/javascript">
+	        $(document).ready(function(){
+		    		$('.slider').slider({
+			    		full_width: true,
+			    		controls: true
+			    	});
+		    		
+		    });
+        </script>
+    </body>
+</html>

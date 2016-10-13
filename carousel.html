@@ -7,47 +7,44 @@
         <meta name="description" content="Este es un trabajo realizado por el equipo CoDDy con intención de agilizar el desarrollo de aplicaciones web.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/coddyframe.css" rel="stylesheet">
         
     </head>
     <body>
-	    <div class="slider fullscreen">
-		    <ul class="slides">
-		        <li>
-			      <img src="img/slide1.jpg">
-			      <div class="caption pull-center-text">
-			        <h3>This is our big Tagline!</h3>
-			        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-			      </div>
-			    </li>
-			    <li>
-			      <img src="img/slide2.jpg">
-			      <div class="caption pull-left-text">
-			        <h3>Left Aligned Caption</h3>
-			        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-			      </div>
-			    </li>
-			    <li>
-			      <img src="img/slide3.jpg">
-			      <div class="caption pull-right-text">
-			        <h3>Right Aligned Caption</h3>
-			        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-			      </div>
-			    </li>
-			</ul>
+		
+		<div id="carousel-example-generic" class="carousel slide fullscreen" data-ride="carousel">
+			<div class="carousel-inner" role="listbox">
+			    <div class="carousel-item active">
+			    		<img src="img/slide1.jpg" alt="First slide">
+			    		<div class="carousel-caption">
+					    <h3>First slide label</h3>
+					    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+			    </div>
+			    <div class="carousel-item">
+			    		<img src="img/slide2.jpg" alt="Second slide">
+			    		<div class="carousel-caption">
+					    <h3>Second slide label</h3>
+					    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+			    </div>
+			    <div class="carousel-item">
+			    		<img src="img/slide3.jpg" alt="Third slide">
+			    		<div class="carousel-caption">
+					    <h3>Third slide label</h3>
+					    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+			    </div>
+		    </div>
 		</div>
 		
 
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-        <script src="js/bootstrap.js"></script>
-        <script src="js/slider.js"></script>
+        <script src="js/coddyframe.js"></script>
+        <script src="js/carousel.js"></script>
         <script type="text/javascript">
 	        $(document).ready(function(){
-		    		$('.slider').slider({
-			    		full_width: true,
-			    		controls: true
-			    	});
-		    		
+		    		$('.carousel').carousel();
 		    });
         </script>
     </body>
