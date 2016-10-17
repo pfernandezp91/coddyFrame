@@ -64,6 +64,7 @@ var Collapse = (function ($) {
       this._config = this._getConfig(config);
       
       $( this._element ).find( '.panel-collapse' ).wrapInner( "<div class='panel-info'/>").css('padding', 0);
+      $( this._element ).find( '.collapse.in' ).parentsUntil( $( '.collapse.popout' ), '.popout .panel-default' ).addClass('active');
    
       this._triggerArray = $.makeArray($('[data-toggle="collapse"][href="#' + element.id + '"],' + ('[data-toggle="collapse"][data-target="#' + element.id + '"]')));
 	  
@@ -146,6 +147,7 @@ var Collapse = (function ($) {
 
         if (this._triggerArray.length) {
           $(this._triggerArray).removeClass(ClassName.COLLAPSED).attr('aria-expanded', true);
+          $(this._triggerArray).parentsUntil( $( '.collapse.popout' ), '.popout .panel-default' ).addClass('active');
         }
 
         this.setTransitioning(true);
@@ -200,6 +202,7 @@ var Collapse = (function ($) {
 
         if (this._triggerArray.length) {
           $(this._triggerArray).addClass(ClassName.COLLAPSED).attr('aria-expanded', false);
+          $(this._triggerArray).parentsUntil( $( '.collapse.popout' ), '.popout .panel-default' ).removeClass('active');
         }
 
         this.setTransitioning(true);
