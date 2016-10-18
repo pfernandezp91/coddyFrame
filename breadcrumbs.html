@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+	<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>CoDDyFrame</title>
+        <meta name="description" content="Este es un trabajo realizado por el equipo CoDDy con intención de agilizar el desarrollo de aplicaciones web.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="css/coddyframe.css" rel="stylesheet">
+        
+    </head>
+    <body>
+	    
+	    
+	<div class="container">					
+		<div class="row">
+		    <div class="col-sm-12">
+			    
+			    
+			    <p>&nbsp;</p>
+		        <nav class="breadcrumb">
+					<a class="breadcrumb-item" href="#">Home</a>
+					<a class="breadcrumb-item" href="#">Library</a>
+					<a class="breadcrumb-item" href="#">Data</a>
+					<span class="breadcrumb-item active">Bootstrap</span>
+				</nav>
+				
+				<p>&nbsp;</p>
+		        <nav class="breadcrumb nav-wrapper">
+					<a class="breadcrumb-item" href="#">Home</a>
+					<a class="breadcrumb-item" href="#">Library</a>
+					<a class="breadcrumb-item" href="#">Data</a>
+					<span class="breadcrumb-item active">Bootstrap</span>
+				</nav>
+				
+				
+		      
+		    </div>
+	    </div>
+	</div>
+	    
+			
+
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="js/coddyframe.js"></script>
+        <script src="js/alert.js"></script>
+        <script src="js/toast.js"></script>
+        <script type="text/javascript">
+	        $(document).ready(function(){
+		    		$(".alert").alert();
+		    });
+		    
+		    //alerta personalizada de materialize
+		    var testAlert = function () {
+				var $toastContent = $('<span>I am toast content</span>');
+				Materialize.toast( $toastContent, 5000 );
+		    }
+        </script>
+    </body>
+</html>

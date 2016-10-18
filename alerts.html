@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+	<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>CoDDyFrame</title>
+        <meta name="description" content="Este es un trabajo realizado por el equipo CoDDy con intención de agilizar el desarrollo de aplicaciones web.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="css/coddyframe.css" rel="stylesheet">
+        
+    </head>
+    <body>
+	    
+	    
+	<div class="container">					
+		<div class="row">
+		    <div class="col-sm-12">
+			    
+		        <div class="alert alert-success" role="alert">
+					<h4 class="alert-heading">Well done!</h4>
+					<p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+					<p class="m-b-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+				</div>
+				
+				<div class="alert alert-warning alert-dismissible fade in" role="alert">
+				  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				    <span aria-hidden="true">&times;</span>
+				  </button>
+				  <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+				</div>
+				
+				<p>&nbsp;</p>
+				<a class="btn" onclick="testAlert()">Toast!</a>
+		      
+		    </div>
+	    </div>
+	</div>
+	    
+			
+
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="js/coddyframe.js"></script>
+        <script src="js/alert.js"></script>
+        <script src="js/toast.js"></script>
+        <script type="text/javascript">
+	        $(document).ready(function(){
+		    		$(".alert").alert();
+		    });
+		    
+		    //alerta personalizada de materialize
+		    var testAlert = function () {
+				var $toastContent = $('<span>I am toast content</span>');
+				Materialize.toast( $toastContent, 5000 );
+		    }
+        </script>
+    </body>
+</html>

@@ -1,3 +1,5 @@
+$('head').append('<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">');
+
 /*!
  * CoddyFrame v0.1 (http://coddy.com.mx)
  * Materialize v0.97.7 (http://materializecss.com)
