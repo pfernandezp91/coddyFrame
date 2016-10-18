@@ -197,6 +197,7 @@ var Collapse = (function ($) {
         Util.reflow(this._element);
 
         $(this._element).addClass(ClassName.COLLAPSING).removeClass(ClassName.COLLAPSE).removeClass(ClassName.IN);
+        $(this._triggerArray).parentsUntil( $( '.collapse.popout' ), '.popout .panel-default' ).addClass('active');
 
         this._element.setAttribute('aria-expanded', false);
 
