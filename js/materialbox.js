@@ -91,7 +91,7 @@
           // Animate Overlay
           // Put before in origin image to preserve z-index layering.
           origin.before(overlay);
-          overlay.velocity({opacity: 1},
+          overlay.velocity({opacity: .5},
                            {duration: inDuration, queue: false, easing: 'easeOutQuad'} );
 
         // Add and animate caption if it exists
@@ -100,7 +100,7 @@
           $photo_caption.text(origin.data('caption'));
           $('body').append($photo_caption);
           $photo_caption.css({ "display": "inline" });
-          $photo_caption.velocity({opacity: 1}, {duration: inDuration, queue: false, easing: 'easeOutQuad'});
+          $photo_caption.velocity({opacity: .5}, {duration: inDuration, queue: false, easing: 'easeOutQuad'});
         }
 
         // Resize Image

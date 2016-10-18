@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+	<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>CoDDyFrame</title>
+        <meta name="description" content="Este es un trabajo realizado por el equipo CoDDy con intención de agilizar el desarrollo de aplicaciones web.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="css/coddyframe.css" rel="stylesheet">
+        
+    </head>
+    <body>
+	    
+	    
+	<div class="container">					
+		<div class="row">
+		    <div class="col-sm-12">
+		        
+		        <ul id="slide-out" class="side-nav">
+				    <li><div class="userView">
+				      <img class="background" src="img/office.jpg">
+				      <a href="#!user"><img class="img-circle" src="img/user.jpg"></a>
+				      <a href="#!name"><span class="white-text name">John Doe</span></a>
+				      <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+				    </div></li>
+				    <li><a href="#!">First Link With Icon</a></li>
+				    <li><a href="#!">Second Link</a></li>
+				    <li><div class="divider"></div></li>
+				    <li><a class="subheader">Subheader</a></li>
+				    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+				</ul>
+				<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+		      
+		    </div>
+	    </div>
+	</div>
+	    
+			
+
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="js/coddyframe.js"></script>
+        <script src="js/sideNav.js"></script>
+        <script type="text/javascript">
+	        $(document).ready(function(){
+		    		$('.button-collapse').sideNav({
+				      menuWidth: 300, // Default is 240
+				      edge: 'left', // Choose the horizontal origin
+				      closeOnClick: false // Closes side-nav on <a> clicks, useful for Angular/Meteor
+				    }
+				  );
+		    });
+        </script>
+    </body>
+</html>
