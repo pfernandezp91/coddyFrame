@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+	<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>CoDDyFrame</title>
+        <meta name="description" content="Este es un trabajo realizado por el equipo CoDDy con intención de agilizar el desarrollo de aplicaciones web.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="css/coddyframe.css" rel="stylesheet">
+        
+    </head>
+    <body>
+	    
+	    
+	<div class="container">					
+		<div class="row">
+		    <div class="col-sm-12">
+			    <p>&nbsp;</p>
+		        <button type="button" class="btn btn-danger" data-toggle="popover" data-placement="bottom" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+				<p>&nbsp;</p>
+				<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">Popover on right</button>
+		    </div>
+	    </div>
+	</div>
+	    
+			
+
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="js/coddyframe.js"></script>
+        <script src="js/tooltip.js"></script>
+        <script src="js/popover.js"></script>
+        <script type="text/javascript">
+	        $(document).ready( function () {
+				$('[data-toggle="popover"]').popover({
+				  trigger: 'hover focus'
+				});
+			})
+	        
+        </script>
+    </body>
+</html>
